@@ -3,59 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
-    <title>Topic 3 - Access Modifiers and Encapsulation</title>
+    <title>OOP Activities</title>
 </head>
 <body>
-    <h1>Topic 3 - Access Modifiers and Encapsulation</h1>
-    <h1 id="personOne"></h1>
-    <script>
-        class Person{
-        //Private Fields
-        #name;
-        #age;
-        #occupation;
-        constructor(name, age, occupation){
-            this.#name = name;
-            this.#age = age;
-            this.#occupation = occupation;
-        }
-        //Getters
-        get name(){
-            return this.#name;
-        }
-        get age(){
-            return this.#age;
-        }
-        get occupation(){
-            return this.#occupation;
-        }
-        // Method to display person information in the console
-        displayInfo() {
-            console.log("Name: " + this.name);
-            console.log("Age: " + this.age);
-            console.log("Occupation: " + this.occupation);
-        }
-        // Method to display person information in the HTML
-        displayInfoHTML() {
-            const personElement = document.getElementById('personOne');
-            personElement.innerHTML = `
-                <strong>Name:</strong> ${this.name}<br>
-                <strong>Age:</strong> ${this.age}<br>
-                <strong>Occupation:</strong> ${this.occupation}
-            `;
-        }
-        }
-        // Creating an object (instance) of the Person class
-        const personOne = new Person('Tristan Bonifacio', 21, 'Student');
-        // Calling methods
-        personOne.displayInfo();  
-        personOne.displayInfoHTML();  
-    </script>
+    <h1>Object Oriented Programming Activities</h1>
+    <h3> <a href="Objects-Classes.html">Topic 1 - Objects and Classes </a></h3>
+    <h3> <a href="Methods.html">Topic 2 - Methods </a></h3>
+    <h3> <a href="Modifiers-Encapsulation.html">Topic 3 - Access Modifiers and Encapsulation </a></h3>
+    <h3> <a href="Inheritance.html">Topic 4 - Inheritance</a></h3>
+    <h3> <a href="linechart.html">Topic 5 - Line Charts </a></h3>
+    <h3> <a href="barchart.html">Topic 6 - Bar Chart</a></h3>
 </body>
 </html>
